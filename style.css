@@ -1,0 +1,32 @@
+:root{
+    --bg: #ffcbe5;
+    --card: #ffffff;
+    --text: #111827;
+    --muted: #6b7280;
+    --primary: #2563eb;
+    --danger: #dc2626;
+    --ok: #16a34a;
+    --space: 16px;
+    --radius: 12px;
+}
+
+body{
+    background: var(--bg);
+    font-family:'Sans-serif';
+    color: var(--text);
+    margin: 20px;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.completedTask{
+    background: var(--ok);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: var(--radius);
+    font-size: 12px;
+    margin-left: var(--space);
+}
