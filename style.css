@@ -1,9 +1,9 @@
 :root{
     --bg: #ffcbe5;
-    --card: #ffffff;
+    --card: #ffeff0;
     --text: #111827;
     --muted: #6b7280;
-    --primary: #2563eb;
+    --primary: #eb2560;
     --danger: #dc2626;
     --ok: #16a34a;
     --space: 16px;
@@ -12,21 +12,35 @@
 
 body{
     background: var(--bg);
-    font-family:'Sans-serif';
-    color: var(--text);
-    margin: 20px;
+    font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--text)
 }
 
 .container{
     width: 100%;
     margin: 0 auto;
+    padding: var(--space);
 }
 
-.completedTask{
-    background: var(--ok);
-    color: #fff;
-    padding: 4px 8px;
+.card{
+    background: var(--card);
+    padding: var(--space);
     border-radius: var(--radius);
-    font-size: 12px;
-    margin-left: var(--space);
+    margin-bottom: var(--space);
+}
+
+button{
+    background: var(--primary);
+    color: white;
+    padding: 2px 8px; 
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
 }
